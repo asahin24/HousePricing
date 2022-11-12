@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/90543/Drive/YAP470-BIL570/Project/Jupy/mlruns/0/f03f49ccc1614bc2bea8a4a74dd7ff30/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f03f49ccc1614bc2bea8a4a74dd7ff30
+run_name: languid-cat-710
+run_uuid: f03f49ccc1614bc2bea8a4a74dd7ff30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668190661263
+status: 1
+tags: []
+user_id: '90543'

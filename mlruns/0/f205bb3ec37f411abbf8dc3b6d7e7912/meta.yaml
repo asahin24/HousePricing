@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/90543/Drive/YAP470-BIL570/Project/Jupy/mlruns/0/f205bb3ec37f411abbf8dc3b6d7e7912/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f205bb3ec37f411abbf8dc3b6d7e7912
+run_name: fearless-goose-864
+run_uuid: f205bb3ec37f411abbf8dc3b6d7e7912
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668103985374
+status: 1
+tags: []
+user_id: '90543'
