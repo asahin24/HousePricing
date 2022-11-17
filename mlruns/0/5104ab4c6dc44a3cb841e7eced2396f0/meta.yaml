@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/90543/Drive/YAP470-BIL570/Project/Jupy/mlruns/0/5104ab4c6dc44a3cb841e7eced2396f0/artifacts
+end_time: 1668703520851
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5104ab4c6dc44a3cb841e7eced2396f0
+run_name: silent-yak-633
+run_uuid: 5104ab4c6dc44a3cb841e7eced2396f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668702915157
+status: 3
+tags: []
+user_id: '90543'
