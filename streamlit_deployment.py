@@ -34,7 +34,6 @@ reg_dict10_file_path = os.getcwd() + '/reg_dict10.pkl'
 reg_dict11_file_path = os.getcwd() + '/reg_dict11.pkl'
 reg_dict12_file_path = os.getcwd() + '/reg_dict12.pkl'
 
-regressor_dict_file_path = os.getcwd() + '/regressor_dict.pkl'
 mean_mode_dict_file_path = os.getcwd() + '/train_mean_mode.pkl'
 LR_file_path = os.getcwd() + '/linear_reg.pkl'
 LR_simple_file_path = os.getcwd() + '/linear_reg_simple.pkl'
@@ -80,8 +79,8 @@ with open(encoder_file_path, 'rb') as file:
     enc = pickle.load(file)
 
 with open(test_file_path, 'rb') as file:
-    # A new file will be created
     X_test = pickle.load(file)
+
 
 
 keyss = []
@@ -174,8 +173,8 @@ regressor_dict = {}
 for i in range(len(keyss)):
     regressor_dict[keyss[i]] = valuess[i]
 
-if test != None:
-    X_test = test
+# if test != None:
+#     X_test = test
 # Preprocessing
 #X_test.drop('Id',axis=1,inplace=True)
 test_encoded = encoding.my_encoder(X_test, enc)
