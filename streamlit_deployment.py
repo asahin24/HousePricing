@@ -14,12 +14,26 @@ with dataset:
 import numpy as np
 import pandas as pd
 import sklearn
+import importlib
 import missing_values as msv
 import encoding
 import pickle
 
 # Read the training data
 import os
+reg_dict1_file_path = os.getcwd() + '/reg_dict1.pkl'
+reg_dict2_file_path = os.getcwd() + '/reg_dict2.pkl'
+reg_dict3_file_path = os.getcwd() + '/reg_dict3.pkl'
+reg_dict4_file_path = os.getcwd() + '/reg_dict4.pkl'
+reg_dict5_file_path = os.getcwd() + '/reg_dict5.pkl'
+reg_dict6_file_path = os.getcwd() + '/reg_dict6.pkl'
+reg_dict7_file_path = os.getcwd() + '/reg_dict7.pkl'
+reg_dict8_file_path = os.getcwd() + '/reg_dict8.pkl'
+reg_dict9_file_path = os.getcwd() + '/reg_dict9.pkl'
+reg_dict10_file_path = os.getcwd() + '/reg_dict10.pkl'
+reg_dict11_file_path = os.getcwd() + '/reg_dict11.pkl'
+reg_dict12_file_path = os.getcwd() + '/reg_dict12.pkl'
+
 regressor_dict_file_path = os.getcwd() + '/regressor_dict.pkl'
 mean_mode_dict_file_path = os.getcwd() + '/train_mean_mode.pkl'
 LR_file_path = os.getcwd() + '/linear_reg.pkl'
@@ -28,8 +42,30 @@ encoder_file_path = os.getcwd() + '/encoder.pkl'
 test_file_path = os.getcwd() + '/test_file.pkl'
 
 
-with open(regressor_dict_file_path, 'rb') as file:
-    regressor_dict = pickle.load(file)
+with open('reg_dict1.pkl', 'rb') as file:
+    reg_dict1 = pickle.load(file)
+with open('reg_dict2.pkl', 'rb') as file:
+    reg_dict2 = pickle.load(file)
+with open('reg_dict3.pkl', 'rb') as file:
+    reg_dict3 = pickle.load(file)
+with open('reg_dict4.pkl', 'rb') as file:
+    reg_dict4 = pickle.load(file)
+with open('reg_dict5.pkl', 'rb') as file:
+    reg_dict5 = pickle.load(file)
+with open('reg_dict6.pkl', 'rb') as file:
+    reg_dict6 = pickle.load(file)
+with open('reg_dict7.pkl', 'rb') as file:
+    reg_dict7 = pickle.load(file)
+with open('reg_dict8.pkl', 'rb') as file:
+    reg_dict8 = pickle.load(file)
+with open('reg_dict9.pkl', 'rb') as file:
+    reg_dict9 = pickle.load(file)
+with open('reg_dict10.pkl', 'rb') as file:
+    reg_dict10 = pickle.load(file)
+with open('reg_dict11.pkl', 'rb') as file:
+    reg_dict11 = pickle.load(file)
+with open('reg_dict12.pkl', 'rb') as file:
+    reg_dict12 = pickle.load(file)
 
 with open(mean_mode_dict_file_path, 'rb') as file:
     train_mean_mode = pickle.load(file)
@@ -46,6 +82,97 @@ with open(encoder_file_path, 'rb') as file:
 with open(test_file_path, 'rb') as file:
     # A new file will be created
     X_test = pickle.load(file)
+
+
+keyss = []
+valuess = []
+a = reg_dict1.keys()
+b = reg_dict1.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict2.keys()
+b = reg_dict2.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict3.keys()
+b = reg_dict3.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict4.keys()
+b = reg_dict4.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict5.keys()
+b = reg_dict5.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict6.keys()
+b = reg_dict6.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict7.keys()
+b = reg_dict7.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict8.keys()
+b = reg_dict8.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict9.keys()
+b = reg_dict9.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict10.keys()
+b = reg_dict10.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict11.keys()
+b = reg_dict11.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+a = reg_dict12.keys()
+b = reg_dict12.values()
+for i in a:
+    keyss.append(i)
+for i in b:
+    valuess.append(i)
+
+regressor_dict = {}
+for i in range(len(keyss)):
+    regressor_dict[keyss[i]] = valuess[i]
 
 if test != None:
     X_test = test
